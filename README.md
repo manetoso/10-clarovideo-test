@@ -2,7 +2,7 @@
 
 Develop by **Emmanuel Cortes**
 
-- You can see this proyect here: [ClaroFakeApp](https://ui-exam-aeromexico.vercel.app/)
+- You can see this proyect here: [ClaroFakeApp](https://10-clarovideo-test.vercel.app/)
 - [Portfolio](https://wwww.ecortes.dev)
 - [GitHub](https://github.com/manetoso)
 - [LinkedIn](https://www.linkedin.com/in/emma-cortes)
