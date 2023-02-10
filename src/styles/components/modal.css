@@ -1,0 +1,69 @@
+#modal {
+  align-items: center;
+  background-color: rgba(26, 26, 26, 0.95);
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: auto;
+}
+.close-button {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+}
+.modal-header {
+  max-width: 70vw;
+  margin-left: 16px;
+}
+
+
+.table-epg {
+  width: 100%;
+  max-height: 60vh;
+  overflow: auto;
+  align-self: end;
+}
+
+.fallback-table th {
+  height: 87px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+.fallback-table thead th {
+  height: auto;
+  width: 25vw;
+  animation: none;
+}
+.fallback-table tbody th:first-child {
+  width: 25vw;
+  outline: none;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(228, 5%, 20%);
+    }
+    100% {
+      background-color: hsl(0, 0%, 12%);
+    }
+  }
+}

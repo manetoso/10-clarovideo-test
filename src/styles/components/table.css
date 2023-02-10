@@ -1,0 +1,65 @@
+table {
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+table td,
+table th {
+  border: 1px solid #000;
+}
+table thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 25vw;
+  background-color: #000;
+  text-align: center;
+}
+table tbody th {
+  font-weight: bold;
+  position: relative;
+  background-color: #1a1a1a;
+}
+.event-cell {
+  padding-inline: 16px;
+  padding-block: 8px;
+}
+table tbody th:hover {
+  background-color: #44454f;
+}
+table tbody th h3 {
+  margin: 0;
+  font-size: 18px;
+}
+table tbody th span {
+  font-weight: normal;
+  font-size: 12px;
+}
+table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  border: 1px solid #000;
+}
+table tbody th:first-child {
+  position: sticky;
+  outline: 5px solid #000;
+  background-color: #1a1a1a;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+table tbody th:first-child img {
+  object-fit: cover;
+  object-position: center;
+  width: 70%;
+}
+table tbody th:first-child span {
+  font-size: 2rem;
+}
